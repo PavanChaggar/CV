@@ -1,0 +1,15 @@
+.DS_Store
+ 
+# VS Code Latex Workflow files
+*.aux
+*.fls 
+*.lof
+*.log
+*.gz
+*.toc
+*.fdb_latexmk
+*.out
+
+#bib files
+*.bbl
+*.blg
