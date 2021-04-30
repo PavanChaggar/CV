@@ -21,18 +21,22 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
+\usepackage{bibentry}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \name{Pavan Chaggar} % Your name
-\address{DPhil Student \\ Mathematical Institute \\ University of Oxford} % Your phone number and email
+\address{D.Phil Student \\ Mathematical Institute \\ University of Oxford} % Your phone number and email
 \address{pavanjit.chaggar@maths.ox.ac.uk} % Your address
 
 \begin{document}
 
+\nobibliography{refs}
+\bibliographystyle{unsrt}
 
-\input{CV/education.tex}
-\input{CV/interests.tex}
-\input{CV/publications.tex}
+\input{sections/education.tex}
+\input{sections/interests.tex}
+\input{sections/publications.tex}
+\input{sections/talks.tex}
 
 \end{document}
