@@ -21,13 +21,15 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
+\usepackage{natbib} 
 \usepackage{bibentry}
+\usepackage{hyperref}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \name{Pavan Chaggar} % Your name
 \address{D.Phil Student \\ Mathematical Institute \\ University of Oxford} % Your phone number and email
-\address{pavanjit.chaggar@maths.ox.ac.uk} % Your address
+\address{pavanjit.chaggar@maths.ox.ac.uk \\ \href{https://github.com/PavanChaggar}{https://github.com/PavanChaggar}}% Your address
 
 \begin{document}
 
@@ -38,5 +40,6 @@
 \input{sections/interests.tex}
 \input{sections/publications.tex}
 \input{sections/talks.tex}
+\input{sections/software.tex}
 
 \end{document}
