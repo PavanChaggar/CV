@@ -1,66 +1,47 @@
-\documentclass[11pt, a4paper]{article}
-% \let\oldthebibliography=\thebibliography
-% \let\endoldthebibliography=\endthebibliography
-% \newcounter{temp}
-% \raggedright
-% \renewcommand{\familydefault}{cmss}
-% \renewenvironment{thebibliography}[1]{
-% \begin{oldthebibliography}{#1}
-\setlength{\itemsep}{-1cm}
-% \setlength{\parskip}{0.0cm}}{\end{oldthebibliography}}
-\setcounter{secnumdepth}{5}
-\setlength{\leftmargini}{0.75cm}
-\setlength{\parindent}{0.0cm}
-\setlength{\parskip}{0.0cm}
-\setlength{\topsep}{0.0cm}
-\usepackage{color}
-\usepackage{fancyhdr}
-\usepackage[top=2.1cm, bottom=2.1cm, left=2.1cm, right=2.1cm]{geometry}
-\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
 \usepackage{natbib} 
 \usepackage{bibentry}
 \usepackage{hyperref}
 
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Pavan Chaggar} % Your name
+\address{DPhil Student \\ Mathematical Institute \\ University of Oxford} % Your phone number and email
+\address{pavanjit.chaggar@maths.ox.ac.uk \\ \href{https://github.com/PavanChaggar}{https://github.com/PavanChaggar}}% Your address
+
 \begin{document}
-\cfoot{}
-\chead{}
-\lfoot{}
-\lhead{}
-\rfoot{P Chaggar\hspace{1.0cm}\arabic{page}}
-\rhead{}
-\pagestyle{fancyplain}
-\renewcommand{\headrulewidth}{0.0pt}
-\begin{center}
-\hrule depth 0.5pt
-\vspace{3pt}
-\hrule
-\vspace{5pt}
-\uppercase{\bfseries {\large C}urriculum vitae}\\
-%\uppercase{\bfseries second line of title}\\
-\textbf{P Chaggar}
-\vspace{5pt}
-\hrule depth 0.5pt
-\vspace{3.0cm}~
-\end{center}
-\vspace{-3.0cm}
-
-\textbf{Pavanjit Chaggar} \\
-DPhil Student \\ Mathematical Institute \\ University of Oxford \\
-pavanjit.chaggar@maths.ox.ac.uk \\
-
-\vspace{-0.5cm}
 
 \nobibliography{refs}
 \bibliographystyle{unsrt}
 
 \input{sections/education.tex}
-\input{sections/funding.tex}
-\input{sections/teaching.tex}
+\input{sections/interests.tex}
 \input{sections/jobs.tex}
 \input{sections/publications.tex}
-\input{sections/visits.tex}
 \input{sections/talks.tex}
-% \vspace{2cm}
-% \input{sections/software.tex}
+\input{sections/software.tex}
+\input{sections/teaching.tex}
 
 \end{document}
