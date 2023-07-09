@@ -98,8 +98,9 @@
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
+  \vspace{0.2cm}
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{1.em} % Margin within the section
   }
   \item[]
 }{
